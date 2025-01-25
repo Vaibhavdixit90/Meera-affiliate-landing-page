@@ -3,7 +3,6 @@ import { ContactForm } from "@/components/contact-form";
 import { CTA } from "@/components/cta";
 import { Features } from "@/components/features";
 import { Testimonials } from "@/components/testimonials";
-import { Tools } from "@/components/tools";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
