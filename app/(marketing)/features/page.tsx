@@ -3,7 +3,6 @@ import { CTA } from "@/components/cta";
 import { Features } from "@/components/features";
 import { FeaturesGrid } from "@/components/features/features-grid";
 import { Testimonials } from "@/components/testimonials";
-import { Tools } from "@/components/tools";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,7 +18,6 @@ export default function PricingPage() {
   return (
     <div className="relative overflow-hidden">
       <AmbientColor />
-      <Tools />
       <Features />
       <FeaturesGrid />
 
