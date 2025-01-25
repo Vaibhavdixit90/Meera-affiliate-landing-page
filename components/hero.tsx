@@ -89,20 +89,24 @@ export const Hero = () => {
   return (
     <div
       ref={containerRef}
-      className="flex flex-col min-h-[70rem] md:min-h-[100rem] pt-20 md:pt-40 relative overflow-hidden"
+      className="flex flex-col min-h-[70rem] md:min-h-[100rem] relative pt-20 md:pt-40  overflow-hidden"
     >
-      <Container className="flex  flex-col items-center justify-center">
+      <Container className="flex flex-col items-center justify-center ">
         <PlayfulHeroSection />
       </Container>
       <div className="flex  items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20">
         <div
           className="w-full relative"
-          id="video"
           style={{
             perspective: "1000px",
           }}
         >
-          <Card rotate={rotate} translate={translate} scale={scale} title={Demo_Video_Heading}>
+          <Card
+            rotate={rotate}
+            translate={translate}
+            scale={scale}
+            title={Demo_Video_Heading}
+          >
             <Image
               src={thumbnailUrl}
               alt="hero thumbnail"
@@ -123,22 +127,22 @@ export const Card = ({
   scale,
   translate,
   children,
-  title
+  title,
 }: {
   rotate: MotionValue<number>;
   scale: MotionValue<number>;
   translate: MotionValue<number>;
   children: React.ReactNode;
-  title:string
+  title: string;
 }) => {
   return (
     <>
-      <div className="max-w-7xl mx-auto py-20 px-8">
+      <div className="max-w-7xl mx-auto py-20 px-8 ">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <CiVideoOn className="h-6 w-6 text-[#facc15]" />
         </FeatureIconContainer>
         <h1 className="text-4xl md:text-4xl lg:text-8xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-10 py-6 leading-10 lg:leading-[7rem]">
-         {title}
+          {title}
         </h1>
       </div>
       <motion.div

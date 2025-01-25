@@ -8,11 +8,13 @@ import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Proactiv - Social Media Automation | Aceternity Templates",
+  title: "Flow Automate - Meera Affiliate Landing Page",
   description:
-    "Proactiv is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
+    "AI-Powered Shopping Assistant Smarter Than Rufus, Designed for Every E-commerce Store",
   openGraph: {
-    images: ["https://proactiv-aceternity.vercel.app/banner.png"],
+    images: [
+      "https://cms.flowautomate.io/uploads/flow_automate_light_banner_f34b10eb0c.png",
+    ],
   },
 };
 
@@ -43,9 +45,9 @@ export default function RootLayout({
             "bg-charcoal antialiased h-full w-full"
           )}
         >
-           <NavBar />
+          <NavBar />
           {children}
-           {/* <Footer /> */}
+          {/* <Footer /> */}
         </body>
       </html>
     </ViewTransitions>
