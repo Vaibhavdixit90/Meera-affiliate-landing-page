@@ -14,13 +14,16 @@ interface ApiResponse {
   data: {
     attributes: {
       Sample_Calculation: SampleCalculationItem[];
+      Sample_Calculation_Heading: string;
       Sample_Calculation_Cta_Tagline: string;
     };
   };
 }
 
 const SampleCalculation = () => {
-  const [data, setData] = useState<ApiResponse["data"]["attributes"] | null>(null);
+  const [data, setData] = useState<ApiResponse["data"]["attributes"] | null>(
+    null
+  );
 
   useEffect(() => {
     // Fetch data from the API on component mount
@@ -50,7 +53,7 @@ const SampleCalculation = () => {
         <RiContactsLine className="h-6 w-6 text-[#facc15]" />
       </FeatureIconContainer>
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-10 py-6 leading-10 lg:leading-[5rem]">
-        Sample Calculation
+        {data.Sample_Calculation_Heading}
       </h1>
       {/* Table */}
       <div className="overflow-x-auto my-10">
@@ -124,11 +127,11 @@ const SampleCalculation = () => {
         {data.Sample_Calculation.map((item) => (
           <div key={item.id}>
             <p>
-              <span className="font-semibold text-lg md:text-xl mb-2">
-                {item.Heading}:{" "}
+              <span className="font-semibold text-lg md:text-xl mb-2 text-[#facc15]">
+                {item.Heading}:
               </span>
-              {item.Description}
             </p>
+            <p>{item.Description}</p>
           </div>
         ))}
       </div>
@@ -140,7 +143,7 @@ const SampleCalculation = () => {
           </p>
         </div>
         <div className="flex justify-center mt-8">
-          <button className="bg-[#facc15] text-black text-sm md:text-xl transition duration-200 rounded-[10px] px-8 py-2">
+          <button className="bg-[#facc15] font-semibold text-black text-sm md:text-xl transition duration-200 rounded-[10px] px-8 py-2">
             Start Earning Now
           </button>
         </div>
