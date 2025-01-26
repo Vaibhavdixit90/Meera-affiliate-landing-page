@@ -53,7 +53,12 @@ export const FeaturedImages = ({
     );
   }, []);
   return (
-    <div className={cn("flex flex-col items-start my-8", containerClassName)}>
+    <div
+      className={cn(
+        "flex flex-col items-center sm:items-start my-8",
+        containerClassName
+      )}
+    >
       <div
         className={twMerge(
           "flex flex-col sm:flex-row items-center justify-center mb-2",

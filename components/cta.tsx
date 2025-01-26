@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { AmbientColor } from "./ambient-color";
 import { Container } from "./container";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -34,10 +33,9 @@ export const CTA = () => {
 
   return (
     <div className="relative">
-      <AmbientColor />
       <Container className="flex flex-col md:flex-row justify-between items-center w-full px-8 mb-10">
         <div className="flex flex-col">
-          <div className="relative flex flex-col items-start overflow-hidden">
+          <div className="relative flex flex-col items-center sm:items-start overflow-hidden">
             <h2 className="mt-9 text-white text-left text-3xl font-bold md:text-5xl">
               Contact Us
             </h2>

@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react"; // Example icons
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
+import { BsStars } from "react-icons/bs";
 
 // Define a union type for the valid Points
 type Point =
@@ -24,7 +25,7 @@ const pointIconMap: Record<Point, JSX.Element> = {
     <IconCurrencyDollar className="h-8 w-8 text-[#facc15]" />
   ),
   "Unparalleled technology": (
-    <IconBrandApple className="h-8 w-8 text-[#facc15]" />
+    <BsStars className="h-8 w-8 text-[#facc15]" />
   ),
   "Easy anytime payments": <IconCash className="h-8 w-8 text-[#facc15]" />,
 };

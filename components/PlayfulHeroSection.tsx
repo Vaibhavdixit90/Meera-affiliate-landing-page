@@ -21,11 +21,11 @@ export function PlayfulHeroSection() {
   return (
     <div ref={ref} className="w-full">
       <div className="grid grid-cols-1">
-        <div className="lg:col-span-2 py-10 md:py-10 px-4 md:px-0">
+        <div className="lg:col-span-2 py-10  px-4 md:px-0">
           <RoughNotationGroup show={isInView}>
             <h2
               className={cn(
-                "text-2xl sm:text-4xl lg:text-7xl font-bold tracking-tight text-neutral-50 text-center sm:text-left ",
+                "text-3xl sm:text-4xl lg:text-7xl font-bold tracking-tight text-neutral-50 text-center sm:text-left ",
                 manrope.className
               )}
               style={{ lineHeight: 1.3 }}

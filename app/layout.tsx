@@ -45,9 +45,9 @@ export default function RootLayout({
             "bg-charcoal antialiased h-full w-full"
           )}
         >
-          <NavBar />
+          {/* <NavBar /> */}
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </body>
       </html>
     </ViewTransitions>

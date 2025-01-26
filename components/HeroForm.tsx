@@ -65,7 +65,7 @@ const HeroForm = () => {
                 id="name"
                 type="text"
                 required
-                placeholder="Manu Arora"
+                placeholder="Your Full Name"
                 className="block w-full bg-white dark:bg-neutral-900 px-4 py-2 rounded-md border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm dark:text-white dark:placeholder-gray-500"
               />
             </div>
@@ -101,7 +101,7 @@ const HeroForm = () => {
                 id="number"
                 type="tel"
                 pattern="[0-9]{10}"
-                placeholder="1234567890"
+                placeholder="+91 1234567890"
                 className="block w-full bg-white dark:bg-neutral-900 px-4 py-2 rounded-md border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-neutral-400 focus:outline-none sm:text-sm dark:text-white dark:placeholder-gray-500"
                 required
               />
@@ -110,7 +110,7 @@ const HeroForm = () => {
               </p>
             </div>
           </div>
-{/* 
+          {/* 
           <div>
             <label
               htmlFor="promotion-type"
@@ -139,10 +139,10 @@ const HeroForm = () => {
           </div> */}
 
           <div className="flex flex-col items-center">
-            <Button className="flex space-x-2 items-center group  bg-[#facc15] capitalize">
-              <span>Start earning today</span>
+            <button className="flex space-x-2 items-center group text-black  bg-[#facc15] capitalize text-sm md:text-xl px-8 py-2 transition duration-200 rounded-[10px]">
+              Start earning today
               {/* <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" /> */}
-            </Button>
+            </button>
             <p className="text-sm  text-center mt-4 text-neutral-400">
               Already have an Affiliate{" "}
               <Link href="#" className="text-white font-medium">

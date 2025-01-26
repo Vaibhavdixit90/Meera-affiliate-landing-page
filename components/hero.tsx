@@ -2,13 +2,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import { Container } from "./container";
 import { PlayfulHeroSection } from "./PlayfulHeroSection";
 import { VideoModal } from "./video-modal";
 import Beam from "./beam";
 import { FeatureIconContainer } from "./features/feature-icon-container";
 import { CiVideoOn } from "react-icons/ci";
+import { HeroVideoDialogDemo } from "./HeroVideoDialog";
 
 // Define the types for the API response
 interface ThumbnailFormats {
@@ -52,20 +52,6 @@ export const Hero = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const fetchHeroData = async () => {
-      try {
-        const response = await fetch(
-          "https://cms.flowautomate.io/api/meera-affiliate-landing-page?populate=*"
-        );
-        const data = await response.json();
-        setHeroData(data);
-      } catch (error) {
-        console.error("Failed to fetch hero data:", error);
-      }
-    };
-    fetchHeroData();
-  }, []);
 
   console.log(heroData);
 
@@ -77,47 +63,16 @@ export const Hero = () => {
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
   const translate = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
-  if (!heroData) return <div>Loading...</div>;
-
-  const baseUrl = "https://cms.flowautomate.io";
-  const thumbnailUrl =
-    baseUrl +
-    heroData.data.attributes.Thumbnail_Image.data.attributes.formats.medium.url;
-
-  const Demo_Video_Heading = heroData.data.attributes.Demo_Video_Heading;
 
   return (
     <div
       ref={containerRef}
-      className="flex flex-col min-h-[70rem] md:min-h-[100rem] relative pt-20 md:pt-40  overflow-hidden"
+      className="flex flex-col min-h-[70rem] md:min-h-[100rem] relative pt-20 overflow-hidden"
     >
       <Container className="flex flex-col items-center justify-center ">
         <PlayfulHeroSection />
       </Container>
-      <div className="flex  items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20">
-        <div
-          className="w-full relative"
-          style={{
-            perspective: "1000px",
-          }}
-        >
-          <Card
-            rotate={rotate}
-            translate={translate}
-            scale={scale}
-            title={Demo_Video_Heading}
-          >
-            <Image
-              src={thumbnailUrl}
-              alt="hero thumbnail"
-              height={720}
-              width={1400}
-              className="mx-auto rounded-md grayscale group-hover:grayscale-0 transition duration-200 object-cover object-left-top h-full  md:object-left-top"
-              draggable={false}
-            />
-          </Card>
-        </div>
-      </div>
+      <HeroVideoDialogDemo />
     </div>
   );
 };
