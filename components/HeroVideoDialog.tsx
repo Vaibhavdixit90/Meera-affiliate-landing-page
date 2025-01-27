@@ -42,7 +42,7 @@ export function HeroVideoDialogDemo() {
         </h1>
       </div>
       <HeroVideoDialog
-        animationStyle="from-center"
+        // animationStyle="from-center"
         videoSrc={videoSrc}
         videoPreviewSrc={videoPreviewSrc}
         thumbnailAlt="Hero Video"

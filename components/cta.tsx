@@ -84,19 +84,20 @@ export const CTA = () => {
               Your browser does not support the video tag.
             </video>
           ) : (
-            <video
-              className="w-full rounded-xl border-2 border-white shadow-lg"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source
-                src=" https://cms.flowautomate.io/uploads/Meera_placeholed_animation_302da24a28.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            // <video
+            //   className="w-full rounded-xl border-2 border-white shadow-lg"
+            //   autoPlay
+            //   loop
+            //   muted
+            //   playsInline
+            // >
+            //   <source
+            //     src=" https://cms.flowautomate.io/uploads/Meera_placeholed_animation_302da24a28.mp4"
+            //     type="video/mp4"
+            //   />
+            //   Your browser does not support the video tag.
+            // </video>
+            ""
           )}
         </div>
       </Container>

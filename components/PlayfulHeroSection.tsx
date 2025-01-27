@@ -56,7 +56,7 @@ export function PlayfulHeroSection() {
                 iterations={3}
                 color="#facc15"
               >
-                Perpetually
+                &nbsp; Perpetually
               </RoughNotation>
             </h2>
           </RoughNotationGroup>

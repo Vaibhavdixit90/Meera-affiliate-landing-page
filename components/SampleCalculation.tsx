@@ -48,7 +48,7 @@ const SampleCalculation = () => {
   }
 
   return (
-    <div className="px-6 max-w-7xl mx-auto mb-[85px]" id="sample-calculation">
+    <div className="px-6 max-w-7xl mx-auto mb-[85px]">
       <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
         <RiContactsLine className="h-6 w-6 text-[#facc15]" />
       </FeatureIconContainer>
@@ -61,7 +61,7 @@ const SampleCalculation = () => {
           <thead className="bg-gray-700">
             <tr>
               <th className="border border-gray-300 px-4 py-2 text-base sm:text-lg md:text-xl">
-                Referrals in 1 Year
+                Referrals in 1-Year
               </th>
               <th className="border border-gray-300 px-4 py-2 text-base sm:text-lg md:text-xl">
                 One-Time Commission
@@ -84,40 +84,40 @@ const SampleCalculation = () => {
             <tr>
               <td className="border border-gray-300 px-4 py-2">50 Referrals</td>
               <td className="border border-gray-300 px-4 py-2">$5,000</td>
-              <td className="border border-gray-300 px-4 py-2">$9,000*</td>
+              <td className="border border-gray-300 px-4 py-2">$9,000</td>
               <td className="border border-gray-300 px-4 py-2">$7,500</td>
               <td className="border border-gray-300 px-4 py-2">$1,000</td>
-              <td className="border border-gray-300 px-4 py-2">$22,500*</td>
+              <td className="border border-gray-300 px-4 py-2">$22,500</td>
             </tr>
             <tr>
               <td className="border border-gray-300 px-4 py-2">
                 100 Referrals
               </td>
               <td className="border border-gray-300 px-4 py-2">$10,000</td>
-              <td className="border border-gray-300 px-4 py-2">$18,000*</td>
+              <td className="border border-gray-300 px-4 py-2">$18,000</td>
               <td className="border border-gray-300 px-4 py-2">$15,000</td>
               <td className="border border-gray-300 px-4 py-2">$4,000</td>
-              <td className="border border-gray-300 px-4 py-2">$47,000*</td>
+              <td className="border border-gray-300 px-4 py-2">$47,000</td>
             </tr>
             <tr>
               <td className="border border-gray-300 px-4 py-2">
                 200 Referrals
               </td>
               <td className="border border-gray-300 px-4 py-2">$20,000</td>
-              <td className="border border-gray-300 px-4 py-2">$36,000*</td>
+              <td className="border border-gray-300 px-4 py-2">$36,000</td>
               <td className="border border-gray-300 px-4 py-2">$30,000</td>
               <td className="border border-gray-300 px-4 py-2">$11,000</td>
-              <td className="border border-gray-300 px-4 py-2">$97,000*</td>
+              <td className="border border-gray-300 px-4 py-2">$97,000</td>
             </tr>
             <tr>
               <td className="border border-gray-300 px-4 py-2">
                 500 Referrals
               </td>
               <td className="border border-gray-300 px-4 py-2">$50,000</td>
-              <td className="border border-gray-300 px-4 py-2">$90,000*</td>
+              <td className="border border-gray-300 px-4 py-2">$90,000</td>
               <td className="border border-gray-300 px-4 py-2">$75,000</td>
               <td className="border border-gray-300 px-4 py-2">$31,000</td>
-              <td className="border border-gray-300 px-4 py-2">$246,000*</td>
+              <td className="border border-gray-300 px-4 py-2">$246,000</td>
             </tr>
           </tbody>
         </table>

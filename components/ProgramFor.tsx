@@ -65,7 +65,7 @@ export const ProgramFor = () => {
   const visiblePoints = isMobile ? points.slice(0, 6) : points;
 
   return (
-    <div className="max-w-7xl mx-auto py-20 px-8" id="program-for">
+    <div className="max-w-7xl mx-auto py-20 px-8">
       <h1 className="text-4xl md:text-4xl lg:text-8xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-10 py-6 leading-10 lg:leading-[7rem]">
         {programData.attributes.Program_For_Heading}
       </h1>
